@@ -68,37 +68,43 @@ MAIN
 /*
 MENU
 */
-	#menu {
+	header {
 		background: #9099A2;
 		width: 100%;
+		height: 43px;
 		position: fixed;
 		top: 0px;
 		left: 0px;
 		z-index: 1;
+		/*border-bottom: 5px solid #000; figure out colour for this bottom border*/
 	}
-	#menu ul {
-		float: right;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		line-height: 1;
+	
+	#logo {
+		margin: 20px;
+		float: left;
+		width: 50px;
+		height: 50 px;
+		background: url(images/logo.png) no-repeat center;
 		display: block;
-		zoom: 1;
-	}	
+	}
+	
+	nav {
+		float: right;
+		font-family: 'Open Sans', sans-serif;
+	}
+	
 	#menu ul li {
 		display: inline-block;
-		padding: 0;
-		margin: 0;
 		float: left;
 	}	
+	
 	#menu ul li a {
 		color: #FFFFFF;
 		text-decoration: none;
 		display: block;
 		padding: 15px 25px;
-		font-family: 'Open Sans', sans-serif;
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: bold;
 		font-size: 14px;
 		position: relative;
 		-webkit-transition: color .25s;
@@ -131,14 +137,17 @@ MENU
 	#menu ul li.active a {
 		color: #333333;
 	}
+	
 	#menu-icon {
-		display: none;
+		background: url(images/menu.png);
+		display: hidden;
 		width: 32px;
 		height: 32px;
 	}
+	
 	a:hover#menu-icon {
 		background-color: #FFFFFF;
-		border-radius: 4px 4px 0 0;
+		border-radius: 4px 4px 0px 0px;
 	}
 
 /*
@@ -166,6 +175,12 @@ BANNER CONTAINER
 		top: 5%;
 		left: 5%;
 	}
+	
+	.bottom-mid {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+	}
 
 /*
 BANNER
@@ -177,7 +192,7 @@ BANNER
 	}
 
 	#bannerhead {
-		font-size: 30px;
+		font-size: 4vw;
 		font-family: Cardo;
 		color: white;
 		line-height: 1.3;
@@ -186,28 +201,35 @@ BANNER
 	#hello {
 		font-family: 'Open Sans', sans-serif;
     	text-transform: uppercase;
-    	font-size: 14px;
-    	font-weight: 700;
+    	font-size: 2vw;
+    	font-weight: 550;
     	color: #D5D5D5;
 	}
 	
-/*
-SKILLS
-*/		
-		progress {
-			appearance: none;
-    		-moz-appearance: none;
-    		-webkit-appearance: none;
-			border-radius: 2px;
-			width: 80%;
-		}		
-		progress::-webkit-progress-bar {
-			background-color: #D5D5D5;
-		}
-		progress::-webkit-progress-value {
-			background: #6D7993;
-		}
+	/*ARROW*/
+	.arrow {
+		box-sizing: border-box;
+		height: 2.5vw;
+		width: 2.5vw;
+		border-style: solid;
+		border-color: white;
+		border-width: 0px 2px 2px 0px;
+		transform: rotate(45deg);
+		transition: border-width 150ms ease-in-out;
+	}
 	
+	.arrow:hover {
+		border-bottom-width: 4px;
+		border-right-width: 4px;
+	}
+	
+	.arrow-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #0e242d;
+		height: 100vh;
+	}	
 
 /*
 PORTFOLIO
@@ -351,11 +373,5 @@ ELEMENT CONTAINER
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
-	
-	header {
-		position: absolute;
-	}
-	#menu-icon {
-	
-	}
+
 }

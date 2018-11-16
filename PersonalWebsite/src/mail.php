@@ -9,6 +9,7 @@
 				 . $email .  "\n" . $body . "\n";
 		file_put_contents("messages.txt", $content, FILE_APPEND);
 	}
+	
 	if (isset($_POST['newmessage'])) {
 		savemessage($_POST['name'], $_POST['email'], $_POST['message']);
 	}
