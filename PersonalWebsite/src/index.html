@@ -1,61 +1,46 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Basic metas -->
-		<meta charset="UTF-8">
-		<meta name="description" content="Hayley Mapley: Resume">
-		<meta name="description" content="resume">
-		<meta name="author" content="Hayley Mapley">
-		<title>Hayley Mapley: Aspiring Software Dev</title>
-		
-		<!-- Mobile specific metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cardo">
-		<link rel="stylesheet" href="style.css">
-		
-		<!-- Favicons -->
-   			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    		<link rel="icon" href="favicon.ico" type="image/x-icon">
-    		
-	</head>
-	<body>
-		
-	<!-- Navigation bar -->
-		<header>
-			<a href="#" id="logo"></a>
-			<nav id="menu">
-					<a href="#!" id="menu-icon"></a>
-				<ul class="nav-list">
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-	<!-- Banner -->
-			<section id="banner">
-				<div class="container">
-					<img src="images/banner.jpg" alt="Computer on desk"/>
-					<div class="mid-left">
-						<p>
-						<div id="hello">Hello there,</div><br />
-						<div id="bannerhead">I'm Hayley Mapley.<br />
-						I'm an aspiring software developer<br /> based in Wellington.
-						</p>
-						</div>
-					</div>
-					<div class="bottom-mid">
-						<a href="#about" type="button"><div class="arrow"></div></a>
-					</div>
-				</div>
-			</section>
-			
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Hayley Mapley</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="wrapper">
 	
-	<!-- About Me-->
+		<!-- HEADER START -->
+		<header>
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo"></div>
+				<div class="menu">
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="mid-left">
+				<div id="hello">Hello there,</div><br />
+				<div id="bannerhead">I'm Hayley Mapley.<br />
+					I'm an aspiring software developer<br /> based in Wellington.
+				</div>
+			</div>
+			<div class="bottom-mid">
+				<a href="#about" type="button"><div class="arrow"></div></a>
+			</div>
+		</header>
+		<!-- HEADER END -->
+		
+		<!-- ABOUT ME START -->
 		<section id="about" class="align-center">
 			<div class="element-container">
 				<div class="element">
@@ -96,36 +81,38 @@
 				</div>
 			</div>
 		</section>
+		<!-- ABOUT ME END -->
 		
-	<!-- Skills -->
+		<!-- SKILLS START -->
 		<section id="skills" class="align-center">
-		<div class="element-container">
-			<div class="element">
-			<h2><span>Skills</span></h2>
-			<p>
-				Here are some things that I am familiar with.
-			</p>
-			<br />
-			<hr />
-				<ul>
-					<li>HTML5<br />
-					</li>
-					<li>CSS3<br />
-					</li>
-					<li>JavaScript<br />
-					</li>
-					<li>Java<br />
-					</li>
-					<li>PHP<br />
-					</li>
-					<li>SQL<br />
-					</li>
-				</ul>
+			<div class="element-container">
+				<div class="element">
+					<h2><span>Skills</span></h2>
+						<p>
+							Here are some things that I am familiar with.
+						</p>
+						<br />
+						<hr />
+							<ul>
+								<li>HTML5<br />
+								</li>
+								<li>CSS3<br />
+								</li>
+								<li>JavaScript<br />
+								</li>
+								<li>Java<br />
+								</li>
+								<li>PHP<br />
+								</li>
+								<li>SQL<br />
+								</li>
+							</ul>
 				</div>
 			</div>
 		</section>
+		<!-- SKILLS END -->
 		
-		<!-- Portfolio -->
+		<!-- PORTFOLIO START -->
 		<section id="portfolio">
 			<div id="heading" class="align-center">
 				<h2><span>Portfolio</span></h2>
@@ -159,8 +146,9 @@
 				<span class="dot" onclick="currentSlide(2)"></span>
 			</div>
 		</section>
+		<!-- PORTFOLIO END -->
 		
-		<!-- Contact -->
+		<!-- CONTACT START -->
 		<section id="contact" class="align-center">
 			<div class="element-container">
 				<div class="element">
@@ -189,18 +177,20 @@
         		</div>
 			</div>
 		</section>
+		<!-- CONTACT END -->
 		
+		<!-- FOOTER START -->
 		<section id="footer"  class="align-center">
 			<div id="copyright">
 				&copy; Hand-made by me. 2018.
 			</div>
 		</section>
-		
-		<!-- Scripts -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script src="main.js"></script>
-			
-	</body>
-</html>
-
+		<!-- FOOTER END -->
+	</div>
 	
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	
+</body>
+</html>

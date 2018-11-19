@@ -1,4 +1,28 @@
 
+// Menu-toggle button
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+      
+      jQuery( document ).ready(function() {
+    	    jQuery('.navbar-collapse a').click(function(){ 
+    	      jQuery('.navbar-collapse').css('height', '0');
+    	      jQuery('.navbar-collapse').removeClass('in');
+    	    });  
+    	 });
+
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
 //Smooth scrolling using jQuery
 
 $(document).ready(function(){
@@ -8,7 +32,7 @@ $(document).ready(function(){
       		event.preventDefault();				//...Before overriding default behaviour
     		var hash = this.hash;				//Stores the hash
       		$('html, body').animate({			//Uses jQuery's animate() method
-       			 scrollTop: $(hash).offset().top
+       			 scrollTop: $(hash).offset().top -50
       			}, 800
       		);
     	}
