@@ -10,154 +10,138 @@
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
-	<div class="wrapper">
+    <div class="wrapper">
+        <!-- HEADER START -->
+        <header>
+            <nav>
+	        <div class="menu-icon">
+		    <i class="fa fa-bars fa-2x"></i>
+		</div>
+		<div class="logo"></div>
+		<div class="menu">
+		    <ul>
+		        <li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		    </ul>
+		</div>
+	    </nav>
+	    <div class="mid-left">
+	        <div id="hello">Hello there,</div><br />
+		    <div id="bannerhead">I'm Hayley Mapley.<br />
+			I'm a software developer<br /> based in Wellington.
+		    </div>
+	    </div>
+	    <div class="bottom-mid">
+	        <a href="#about" type="button"><div class="arrow"></div></a>
+	    </div>
+	</header>
+	<!-- HEADER END -->
+		
+	<!-- ABOUT ME START -->
+	<section id="about" class="align-center">
+	    <div class="element-container">
+	        <div class="element">
+		    <h2><span>More About Me</span></h2>
+		    <br />
+		    <p>
+		        Here are some other things you should know.
+		    </p>
+		    <br />
+		    <hr />
+		    <h3>Experience</h3>
+		    <p style="text-align:justify">
+		        Coding has only come into my life relatively recently. After graduating from a <em>BA in Linguistics and TESOL</em> and hearing about opportunities in the tech sector, I began to teach myself to code, and quickly discovered how awesome it feels to code something that actually does something cool. In order to hone my skills and prepare myself for a career in the industry, I enrolled to study a <em>Master of Software Development</em>, and now I work as a developer on <a href="https://koha-community.org/">Koha (an open-source library system)</a> at <a href="https://www.catalyst.net.nz/">Catalyst IT</a>. 
+		    </p>
+		    <br />
+		    <h3>Purpose</h3>
+		    <p style="text-align:justify"> 
+		    I quickly realised as I taught myself different programming concepts and languages,	that I had stumbled upon an area of technology that not only excited me, but also presented me an avenue through which to fulfil my purpose: to create things that might in some way have an impact on the people around me, and those in the wider world. This is what I hope to do going forward in my career, starting with Koha.				
+		    </p>
+		    <br />
+		    <h3>Interests</h3>
+		    <p style="text-align:justify">
+		        My background and previous degree are a great indicator of my interests, as linguistics remains a major passion and source of enthusiasm in my life. Ideally, one day I'd love to be able to use my proficiencies in the field of linguistics in conjunction with my active interest in coding to help solve larger communicative problems.
+		    </p>
+		</div>
+	    </div>
+	</section>
+	<!-- ABOUT ME END -->
+		
+	<!-- PORTFOLIO START -->
+	<!--<section id="portfolio">
+		<div id="heading" class="align-center">
+			<h2><span>Portfolio</span></h2>
+			<p>
+			Here are some things that I have made.
+			</p>
+			<br />
+			<hr />
+			<br />
+		</div>
+		<div class="slideshow-container">
+			<div class="slides fade">
+				<img src="images/conways.PNG" alt="Conway's Game of Life" style="width:100%">
+				<div class="text">
+					Made using JavaFX in collaboration with four others 
+					as a group project for MSwDev course.
+				</div>
+			</div>
+			<div class="slides fade">
+				<img src="images/guessing.png" alt="Guessing Game" style="width: 100%">
+				<div id="dark-bg" class="text">
+					Made alone using JavaFX as part of an assignment for
+					MSwDev coursework.
+				</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="align-center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+		</div>
+	</section>-->
+	<!-- PORTFOLIO END -->
+		
+	<!-- CONTACT START -->
+	<section id="contact" class="align-center">
+	    <div class="element-container">
+	        <div class="element">
+		    <h2><span>Get In Touch</span></h2>
+		    <p>
+		        If you think I could bring value to your project, or simply
+			want to chat, send me a message through the form below or 
+			connect with me on LinkedIn or Twitter.
+		    </p>
+		    <br />
+		    <hr />
+		    <div id="icons">
+		        <a href="https://github.com/hayleymapley/" target="_blank"><img src="images/icons/github.png" alt="GitHub"></a>
+            		<a href="https://www.linkedin.com/in/hayleymapley/" target="_blank"><img src="images/icons/linkedin.png" alt="LinkedIn"></a>
+			<a href="https://twitter.com/hayleymapley" target="_blank"><img src="images/icons/twitter.png" alt="Twitter"></a>
+		    </div>
+		    <form action="mail.php" method="post">
+		        <input class="field" name="name" placeholder="Name" type="text" required><br />
+			<input class="field" name="email" placeholder="E-mail" type="email" required><br />
+                	<textarea class="field" name="message" placeholder="Message" required ></textarea><br />
+                	<input class="submit button" name="newmessage" type="submit" value="SEND" />
+            	    </form>
+        	</div>
+	    </div>
+	</section>
+	<!-- CONTACT END -->
+		
+	<!-- FOOTER START -->
+	<section id="footer"  class="align-center">
+	    <div id="copyright">
+	        &copy; Hand-made by me. 2018.
+	    </div>
+	</section>
+	<!-- FOOTER END -->
+    </div>
 	
-		<!-- HEADER START -->
-		<header>
-			<nav>
-				<div class="menu-icon">
-					<i class="fa fa-bars fa-2x"></i>
-				</div>
-				<div class="logo"></div>
-				<div class="menu">
-					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-			<div class="mid-left">
-				<div id="hello">Hello there,</div><br />
-				<div id="bannerhead">I'm Hayley Mapley.<br />
-					I'm a software developer<br /> based in Wellington.
-				</div>
-			</div>
-			<div class="bottom-mid">
-				<a href="#about" type="button"><div class="arrow"></div></a>
-			</div>
-		</header>
-		<!-- HEADER END -->
-		
-		<!-- ABOUT ME START -->
-		<section id="about" class="align-center">
-			<div class="element-container">
-				<div class="element">
-					<h2><span>More About Me</span></h2>
-						<br />
-						<p>
-							Here are some other things you should know.
-						</p>
-						<br />
-						<hr />
-					<h3>Experience</h3>
-						<p style="text-align:justify">
-							Coding has only come into my life relatively recently. After graduating from a <em>BA
-							in Linguistics and TESOL</em> and hearing about opportunities in the tech
-							sector, I began to teach myself to code, and quickly discovered how 
-							awesome it feels to code something that actually does something cool. In order to hone
-							my skills and prepare myself for a career in the industry, I enrolled to study
-							a <em>Master of Software Development</em>, and now I work as a developer on <a href="https://koha-community.org/">Koha (an open-source library system)</a> at <a href="https://www.catalyst.net.nz/">Catalyst IT</a>. 
-						</p>
-						<br />
-					<h3>Purpose</h3>
-						<p style="text-align:justify"> 
-						I quickly realised as I taught myself different programming concepts and languages,
-						that I had stumbled upon an area of technology that not only excited me, but also presented me an
-						avenue through which to fulfil my purpose: to create things that might
-						in some way have an impact on the people around me, and those in the wider world.
-						This is what I hope to do going forward in my career, starting with Koha.				
-						</p>
-						<br />
-					<h3>Interests</h3>
-						<p style="text-align:justify">
-							My background and previous degree are a great indicator of my interests, as
-							linguistics remains a major passion and source of enthusiasm in my life. Ideally, one day I'd love 
-							to be able to use my proficiencies in the field of linguistics in conjunction 
-							with my active interest in coding to help solve larger communicative problems.
-						</p>
-				</div>
-			</div>
-		</section>
-		<!-- ABOUT ME END -->
-		
-		<!-- PORTFOLIO START -->
-		<!--<section id="portfolio">
-			<div id="heading" class="align-center">
-				<h2><span>Portfolio</span></h2>
-					<p>
-						Here are some things that I have made.
-					</p>
-				<br />
-				<hr />
-				<br />
-			</div>
-			<div class="slideshow-container">
-				<div class="slides fade">
-					<img src="images/conways.PNG" alt="Conway's Game of Life" style="width:100%">
-					<div class="text">
-						Made using JavaFX in collaboration with four others 
-						as a group project for MSwDev course.
-					</div>
-				</div>
-				<div class="slides fade">
-					<img src="images/guessing.png" alt="Guessing Game" style="width: 100%">
-					<div id="dark-bg" class="text">
-						Made alone using JavaFX as part of an assignment for
-						MSwDev coursework.
-					</div>
-				</div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<div class="align-center">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-			</div>
-		</section>-->
-		<!-- PORTFOLIO END -->
-		
-		<!-- CONTACT START -->
-		<section id="contact" class="align-center">
-			<div class="element-container">
-				<div class="element">
-					<h2><span>Get In Touch</span></h2>
-					<p>
-						If you think I could bring value to your project, or simply
-						want to chat, send me a message through the form below or 
-						connect with me on LinkedIn or Twitter.
-					</p>
-					<br />
-					<hr />
-					<div id="icons">
-						<a href="https://github.com/hayleymapley/" target="_blank">
-            			<img src="images/icons/github.png" alt="GitHub"></a>
-            			<a href="https://www.linkedin.com/in/hayleymapley/" target="_blank">
-						<img src="images/icons/linkedin.png" alt="LinkedIn"></a>
-						<a href="https://twitter.com/hayleymapley" target="_blank">
-						<img src="images/icons/twitter.png" alt="Twitter"></a>
-					</div>
-						<form action="mail.php" method="post">
-							<input class="field" name="name" placeholder="Name" type="text" required><br />
-							<input class="field" name="email" placeholder="E-mail" type="email" required><br />
-                			<textarea class="field" name="message" placeholder="Message" required ></textarea><br />
-                			<input class="submit button" name="newmessage" type="submit" value="SEND" />
-            			</form>
-        		</div>
-			</div>
-		</section>
-		<!-- CONTACT END -->
-		
-		<!-- FOOTER START -->
-		<section id="footer"  class="align-center">
-			<div id="copyright">
-				&copy; Hand-made by me. 2018.
-			</div>
-		</section>
-		<!-- FOOTER END -->
-	</div>
-	
-	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="main.js"></script>
 	
 </body>
